@@ -46,6 +46,12 @@ body {
   opacity: 0.5;
 }
 
+/* روی صفحات مستقل (مثل Clariva) جلوه‌های خط‌اسکن/گرین کلی غیرفعال شوند */
+body:has(.clariva-page)::before,
+body:has(.clariva-page)::after {
+  display: none;
+}
+
 /* نویز/گرین ملایم */
 .grain::after {
   content: "";
